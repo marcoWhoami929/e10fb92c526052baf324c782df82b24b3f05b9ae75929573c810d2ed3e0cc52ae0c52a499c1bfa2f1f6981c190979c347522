@@ -1,0 +1,226 @@
+import { StyleSheet, Dimensions } from "react-native";
+import { color } from "react-native-elements/dist/helpers";
+
+const { width: viewportWidth } = Dimensions.get("window");
+import { ProductCard } from "../../AppStyles";
+import { ProductCardSm } from "../../AppStylesSm";
+
+const styles = StyleSheet.create({
+  container: ProductCard.container,
+  photo: ProductCard.photo,
+  title: ProductCard.title,
+  price: ProductCard.price,
+  priceDiscount: ProductCard.priceDiscount,
+  priceDiscountSm: ProductCardSm.priceDiscount,
+  containerSm: ProductCardSm.container,
+  photoSm: ProductCardSm.photo,
+  titleSm: ProductCardSm.title,
+  priceSm: ProductCardSm.price,
+  brandSm: ProductCardSm.brand,
+  listProductsVertical: ProductCard.listProductsVertical,
+  listProductsHorizontal: ProductCardSm.listProductsHorizontal,
+  containerBrand: ProductCard.containerBrand,
+  containerBrandSm: ProductCardSm.containerBrand,
+  containerShop: ProductCard.containerShop,
+  containerShopSm: ProductCardSm.containerShop,
+  containerShopCartItem: ProductCard.containerShopCartItem,
+  containerShopCartItemSm: ProductCardSm.containerShopCartItem,
+  containerShopFavoriteItem: ProductCard.containerShopFavoriteItem,
+  containerShopFavoriteItemSm: ProductCardSm.containerShopFavoriteItem,
+  containerBrandName: ProductCard.containerBrandName,
+  containerBrandNameSm: ProductCardSm.containerBrandName,
+  containerDiscount: ProductCard.containerDiscount,
+  percentDiscount: ProductCard.percentDiscount,
+  containerDiscountSm: ProductCardSm.containerDiscount,
+  percentDiscountSm: ProductCardSm.percentDiscount,
+  listCategoriesHorizontal: ProductCardSm.listCategoriesHorizontal,
+  listBrandsHorizontal: ProductCardSm.listBrandsHorizontal,
+  containerCategory: ProductCardSm.containerCategory,
+  photoCategory: ProductCardSm.photoCategory,
+  titleCategory: ProductCardSm.titleCategory,
+  containerSearch: {
+    backgroundColor: "#0039aa",
+    width: "100%",
+    height: 60,
+  },
+  containerTitles: {
+    backgroundColor: "#0039aa",
+    width: "100%",
+    height: 60,
+  },
+  containerScroll: {
+    backgroundColor: "white",
+  },
+  containerLocation: {
+    flex: 1,
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#0036AE",
+  },
+  textSend: {
+    fontSize: 12,
+    color: "#ffffff",
+  },
+  textLocation: {
+    fontSize: 14,
+    fontWeight: "bold",
+    color: "#ffffff",
+    top: 3,
+    marginLeft: 5,
+  },
+
+  iconLocation: {
+    top: 3,
+  },
+  carouselContainer: {
+    minHeight: 150,
+    marginBottom: 20,
+  },
+  carousel: {
+    width: "100%",
+    height: 170,
+  },
+  image: {
+    ...StyleSheet.absoluteFillObject,
+    width: "90%",
+    height: 130,
+
+    borderRadius: 20,
+    borderTopLeftRadius: 0,
+    borderTopRightRadius: 0,
+    borderBottomLeftRadius: 20,
+    borderBottomRightRadius: 20,
+    shadowColor: "#cccccc",
+    marginLeft: "5%",
+    shadowOffset: {
+      width: 0,
+      height: 1,
+    },
+    shadowRadius: 1,
+    shadowOpacity: 1.0,
+    elevation: 0.5,
+  },
+  imageContainer: {
+    flex: 1,
+    justifyContent: "center",
+    width: viewportWidth,
+    height: 200,
+  },
+  paginationContainer: {
+    flex: 1,
+    position: "absolute",
+    alignSelf: "center",
+    paddingVertical: 8,
+    marginTop: 100,
+  },
+  paginationDot: {
+    width: 8,
+    height: 8,
+    borderRadius: 4,
+    marginHorizontal: 0,
+  },
+  bottomModalView: {
+    justifyContent: "flex-end",
+    margin: 0,
+  },
+  button: {
+    width: "50%",
+    borderRadius: 10,
+    borderWidth: 2,
+    borderStyle: "solid",
+    height: 50,
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "limegreen",
+  },
+  buttonText: {
+    fontWeight: "bold",
+  },
+  modal: {
+    width: "100%",
+    height: "95%",
+    borderRadius: 20,
+    borderWidth: 0,
+    borderStyle: "solid",
+    backgroundColor: "#ffffff",
+  },
+  modalDirection: {
+    width: "100%",
+    height: "70%",
+    borderRadius: 20,
+    borderWidth: 0,
+    borderStyle: "solid",
+    backgroundColor: "#f2f2f2",
+  },
+  modalText: {
+    fontSize: 20,
+  },
+  iconCloseModal: {
+    margin: 10,
+  },
+  imageBanner: {
+    flexDirection: "row",
+    width: "100%",
+    height: "100%",
+  },
+  containerDirections: {
+    width: "93%",
+    backgroundColor: "#ffffff",
+    height: "85%",
+    top: 10,
+    borderRadius: 10,
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowRadius: 3,
+    shadowOpacity: 1.0,
+    elevation: 3,
+    marginBottom: 10,
+    marginLeft: 10,
+  },
+  lineSeparator: {
+    borderBottomWidth: 1,
+    borderBottomColor: "#dddddd",
+    width: "90%",
+    left: 15,
+  },
+  containerDirection: {
+    marginBottom: 10,
+    marginLeft: 15,
+    marginTop: 15,
+    flex: 1,
+    flexDirection: "row",
+    width: "90%",
+    height: 50,
+  },
+  nameDirection: {
+    fontSize: "16",
+    fontWeight: "bold",
+    color: "#FF7F50",
+  },
+  titleDirection: {
+    fontSize: "13",
+    fontWeight: "lighter",
+  },
+  titleModalDirection: {
+    textAlign: "center",
+    top: -30,
+    fontSize: 18,
+    color: "#333333",
+    fontWeight: "bold",
+  },
+  containerTextDirection: {
+    width: "90%",
+  },
+  roundCheckbox: {
+    flexDirection: "row",
+    textAlign: "center",
+    borderColor: "red",
+    justifyContent: "center",
+    backgroundColor: "red",
+  },
+});
+
+export default styles;

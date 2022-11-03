@@ -1,0 +1,115 @@
+import { StyleSheet } from "react-native";
+import { ProductCard } from "../../AppStyles";
+
+const styles = StyleSheet.create({
+  container: ProductCard.container,
+  photo: ProductCard.photo,
+  title: ProductCard.title,
+  price: ProductCard.price,
+  priceDiscount: ProductCard.priceDiscount,
+  listProductsVertical: ProductCard.listProductsVertical,
+  containerBrand: ProductCard.containerBrand,
+  containerShop: ProductCard.containerShop,
+  containerShopCartItem: ProductCard.containerShopCartItem,
+  containerShopFavoriteItem: ProductCard.containerShopFavoriteItem,
+  containerBrandName: ProductCard.containerBrandName,
+  containerDiscount: ProductCard.containerDiscount,
+  percentDiscount: ProductCard.percentDiscount,
+  btnIcon: {
+    height: 14,
+    width: 14,
+  },
+  searchContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "#ffffff",
+    borderRadius: 10,
+    top: 10,
+    width: "95%",
+    height: 40,
+    marginLeft: 10,
+    justifyContent: "space-around",
+  },
+  searchIcon: {
+    width: 20,
+    height: 20,
+    tintColor: "grey",
+  },
+  searchInput: {
+    backgroundColor: "#ffffff",
+    color: "black",
+    width: 180,
+    height: 40,
+    marginLeft: -30,
+  },
+  searchInputSecond: {
+    backgroundColor: "#ffffff",
+    color: "black",
+    width: "80%",
+    height: 40,
+    marginLeft: -5,
+    paddingLeft: 10,
+    borderRadius: 10,
+  },
+  image: {
+    ...StyleSheet.absoluteFillObject,
+    width: "100%",
+    height: 50,
+  },
+  imageContainer: {
+    justifyContent: "center",
+    width: 50,
+    height: 50,
+  },
+  containerSearches: {
+    width: "100%",
+    backgroundColor: "#ffffff",
+    height: 700,
+    top: 10,
+    borderRadius: 10,
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowRadius: 3,
+    shadowOpacity: 1.0,
+    elevation: 3,
+    marginBottom: 10,
+    marginLeft: 0,
+  },
+  lineSeparator: {
+    borderBottomWidth: 1,
+    borderBottomColor: "#dddddd",
+    width: "90%",
+    left: 15,
+  },
+  containerSearche: {
+    marginLeft: 15,
+    marginTop: 15,
+    flex: 1,
+    flexDirection: "row",
+    width: "100%",
+    height: 25,
+  },
+  keywordSearch: {
+    fontSize: "16",
+    fontWeight: "light",
+    color: "#333333",
+    marginLeft: 10,
+  },
+
+  containerTextSearche: {
+    width: "90%",
+    flexDirection: "row",
+  },
+  containerMain: {
+    backgroundColor: "#ffffff",
+    borderTopLeftRadius: 30,
+    borderTopRightRadius: 30,
+    width: "100%",
+    height: 700,
+    top: 10,
+  },
+});
+
+export default styles;
