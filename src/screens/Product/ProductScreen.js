@@ -91,6 +91,9 @@ export default function ProductScreen(props) {
     let category = item;
     navigation.navigate("Category", { category, name });
   };
+  const onPressProduct = (item) => {
+    navigation.navigate("Product", { item });
+  };
   /**FUNCTIONS COUNTER */
   const increaseCounter = () => {
     setCounter(counter + 1);

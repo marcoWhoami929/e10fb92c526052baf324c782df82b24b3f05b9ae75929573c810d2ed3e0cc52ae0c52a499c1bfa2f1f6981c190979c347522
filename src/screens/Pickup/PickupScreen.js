@@ -188,6 +188,7 @@ export default function PickupScreen(props) {
                     placeholder="Instrucciones para tu recolección"
                     placeholderTextColor="#C6C6C6"
                     placeholderfontweigth="bold"
+                    onChangeText={setObservations}
                   />
                 </View>
                 <View style={styles.containerButtonPickup}>
